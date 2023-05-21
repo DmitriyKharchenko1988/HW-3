@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="bg-image"></div>
+  <div class="image-top"></div>
+
+  <header class="header">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-items"><a class="navbar-link" href="../index.html">Головна</a></li>
+        <li class="navbar-items"><a class="navbar-link" href="articles.html">Статті</a></li>
+        <li class="navbar-items"><a class="navbar-link" href="catalog.html">Каталог</a></li>
+        <li class="navbar-items"><a class="navbar-link" href="contacts.html">Контакти</a></li>
+        <li class="navbar-items"><a class="navbar-link" href="gallery.html">Галерея</a></li>
+        <li class="navbar-items"><a class="navbar-link" href="page-nave.html">Навігація</a></li>
+        <li class="navbar-items"><a class="navbar-link" href="registration.html">Реєстрація</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="bg-overlay">
+        <h1>Реєстрація</h1>
+        <form action="https://tests.fomenko.top/echo/index.php" method="get">
+          <fieldset>
+            <legend>Персональні дані</legend>
+            <div class="form-group">
+              <label for="name">І'мя</label>
+              <input class="textcapital" type="text" id="name" name="name" placeholder="І'мя">
+            </div>
+            <div class="form-group">
+              <label for="surname">Прізвище</label>
+              <input class="textcapital" type="text" id="surname" name="surname" placeholder="Прізвище">
+            </div>
+            <div class="form-group">
+              <label for="date">Вибрати дату народження</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+              <label for="img">Додати фото</label>
+              <input type="file" name="img" id="img">
+            </div>
+            <div class="hidden">
+              <input name="hid" type="hidden">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Ведіть Email">
+            </div>
+            <div class="form-group">
+              <label for="password">Пароль</label>
+              <input type="password" id="password" name="password" placeholder="Введіть пароль">
+            </div>
+            <div class="form-group">
+              <label for="website">Адреса сайту</label>
+              <input type="url" id="website" name="website" value="https://mysite.name">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend> Вибрати стать</legend>
+            <div class="form-group form-group-sm">
+              <input type="radio" id="gender-male" name="gender" value="male">
+              <label for="gender-male">Чоловіча</label>
+            </div>
+            <div class="form-group form-group-sm">
+              <input type="radio" id="gender-female" name="gender" value="female">
+              <label for="gender-female">Жіноча</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Вибрати кухню</legend>
+            <div class="form-group-sm ">
+              <input type="checkbox" id="ua" name="kitchen" value="ua" checked>
+              <label for="ua">Українська</label>
+            </div>
+            <div class="form-group-sm ">
+              <input type="checkbox" id="ar" name="kitchen" value="ar">
+              <label for="ar">Арабська</label>
+            </div>
+            <div class="form-group-sm ">
+              <input type="checkbox" id="en" name="kitchen" value="en">
+              <label for="en">Англійська</label>
+            </div>
+            <div class="form-group-sm ">
+              <input type="checkbox" id="gr" name="kitchen" value="gr">
+              <label for="gr">Німецька</label>
+            </div>
+          </fieldset>
+
+          <Fieldset>
+            <legend> Про себе у довільній формі</legend>
+            <div class="form-group">
+              <label for="txt">Розкажіть про себе</label>
+              <textarea name="text" id="txt" cols="30" rows="10" placeholder="Декілька слів...."></textarea>
+            </div>
+          </Fieldset>
+
+          <fieldset>
+            <legend>Дії</legend>
+            <div class="form-group">
+              <button class="btn" type="submit">Зареєструватись</button>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="reset">Скинути</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="copy">&copy; Dmitriy Kharchenko</div>
+  </footer>
+
+</body>
+
+</html>
